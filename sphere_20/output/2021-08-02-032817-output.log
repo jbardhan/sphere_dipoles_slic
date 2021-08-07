@@ -1,0 +1,324 @@
+Run started on:
+	Date: 2021/8/2
+	Time: 3:28:17
+	PyGBe version: 0.3.1+43.g2443fe6
+Config file: sphere_20/sphere_20_1.config
+Parameter file: /home/bard415/repos/sphere_dipoles_slic/sphere_20/sphere_20.param
+Geometry folder: /home/bard415/repos/sphere_dipoles_slic/sphere_20/geometry
+Running in: /home/bard415/repos/sphere_dipoles_slic/sphere_20
+Could not find `nvcc` on your PATH.  Is cuda installed?  PyGBe will continue to run but will run significantly slower.  For optimal performance, add `nvcc` to your PATH
+
+Reading surface 0 from file ./surf1Xh2PD
+Time load mesh: 0.09536528587341309
+Removed areas=0: 0
+
+Reading surface 1 from file ./surf0UZ6kG
+Time load mesh: 0.1079862117767334
+Removed areas=0: 0
+
+Total elements : 21874
+Total equations: 43748
+----------------------------
+
+2 surfaces:
+
+Surface 0:
+	9814 elements
+	Surface type         : dielectric_interface
+	Cells                : 65
+	Twigs                : 56
+	Levels               : 3
+	C0 size              : 19.991219246127336
+	C0 box center        : -3.706927661597425e-16, -4.2897900957913044e-05, -7.132667617763617e-06
+	Twig cell size       : 4.997804811531834
+	Rbox/theta           : 9.995609623063668
+	Analytic distance    : 2.023544109107244
+	Elem. per Ang^2      : 1.9536676538223772
+	Max, min, avg elem.  : 0.581901937256399, 0.44395697199165596, 0.5118577860689286
+	Total area           : 5023.372312480466
+Surface 1:
+	12060 elements
+	Surface type         : stern_layer
+	Cells                : 65
+	Twigs                : 56
+	Levels               : 3
+	C0 size              : 21.99226655107296
+	C0 box center        : 6.033132350069176e-16, -3.1343283582206215e-05, -1.9347705909384972e-07
+	Twig cell size       : 5.49806663776824
+	Rbox/theta           : 10.99613327553648
+	Analytic distance    : 2.008078192265229
+	Elem. per Ang^2      : 1.9838822667254967
+	Max, min, avg elem.  : 0.5691545225859143, 0.43408611564123994, 0.5040621698033287
+	Total area           : 6078.989767828145
+------------------------------
+
+3 regions:
+
+Region 0:
+	Laplace or Yukawa: 2
+	kappa            : 0.125
+	dielectric const : 80.0
+	Number of charges: 0
+	Parent surface   : []
+	Child surfaces   : [1]
+Region 1:
+	Laplace or Yukawa: 1
+	kappa            : 1e-12
+	dielectric const : 80.0
+	Number of charges: 0
+	Parent surface   : [1]
+	Child surfaces   : [0]
+Region 2:
+	Laplace or Yukawa: 1
+	kappa            : 1e-12
+	dielectric const : 1.0
+	Number of charges: 2
+	Parent surface   : [0]
+	Child surfaces   : []
+------------------------------
+
+Parameters:
+	Data type               : <class 'numpy.float64'>
+	Use GPU                 : 0
+	P                       : 6
+	threshold               : 0.50
+	theta                   : 0.50
+	NCRIT                   : 500
+	CUDA block size         : 128
+	Gauss points per element: 7
+	Gauss points near singlr: 19
+	1D Gauss points per side: 13
+	GMRES tolerance         : 1e-05
+	GMRES max iterations    : 1000
+	GMRES restart iteration : 500
+----------------------------
+
+Generate interaction list
+Transfer data to GPU
+Generate RHS
+List time          : 0.028816699981689453s
+Data transfer time : 7.152557373046875e-07s
+RHS generation time: 0.0004820823669433594s
+------------------------------
+Total setup time   : 1.692275047302246s
+Solve
+Asymmetric parameters:
+alpha: 0.500000, beta: -60.000000, gamma: -0.500000
+Picard: 
+	max iter: 20
+tolerance: 0.000100
+
+Picard iteration 0
+Solve for phi
+Iteration: 1, relative residual: 0.6261458747961232
+Iteration: 2, relative residual: 0.3935026348063892
+Iteration: 3, relative residual: 0.3523226896901779
+Iteration: 4, relative residual: 0.22985404469140516
+Iteration: 5, relative residual: 0.18308688538046852
+Iteration: 6, relative residual: 0.11529856063083481
+Iteration: 7, relative residual: 0.06949571535342763
+Iteration: 8, relative residual: 0.043665722291527695
+Iteration: 9, relative residual: 0.028171460173241056
+Iteration: 10, relative residual: 0.024314580775719276
+Iteration: 11, relative residual: 0.0163104786888132
+Iteration: 12, relative residual: 0.012485220528380667
+Iteration: 13, relative residual: 0.009480094586577366
+Iteration: 14, relative residual: 0.0074319653763583494
+Iteration: 15, relative residual: 0.004685087039863769
+Iteration: 16, relative residual: 0.00327876408674058
+Iteration: 17, relative residual: 0.002110717097991432
+Iteration: 18, relative residual: 0.00140271417623222
+Iteration: 19, relative residual: 0.0010987236879848985
+Iteration: 20, relative residual: 0.0007845721510680083
+Iteration: 21, relative residual: 0.00045936066456433
+Iteration: 22, relative residual: 0.00034585182414462455
+Iteration: 23, relative residual: 0.00026309276279460714
+Iteration: 24, relative residual: 0.00018884391165500199
+Iteration: 25, relative residual: 0.00012666492342121272
+Iteration: 26, relative residual: 8.746473847871514e-05
+Iteration: 27, relative residual: 6.812649001885322e-05
+Iteration: 28, relative residual: 4.4764768898357304e-05
+Iteration: 29, relative residual: 3.4446284021409244e-05
+Iteration: 30, relative residual: 2.6709246501282983e-05
+Iteration: 31, relative residual: 2.0291270831922413e-05
+Iteration: 32, relative residual: 1.5917222251203966e-05
+GMRES solve
+Converged after 33 iterations to a residual of 9.717475985369246e-06
+Time weight vector: 2.6071579589843754
+Time sort         : 0.2605161132812501
+Time data transfer: 0.0
+Time P2M          : 7.250070068359378
+Time M2M          : 0.18449731445312506
+Time M2P          : 107.63975548744202
+Time P2P          : 316.8424632549286
+	Time analy: 8.677408218383789
+
+Picard iteration 1
+Solve for sigma
+Iteration: 1, relative residual: 0.6713150154679216
+Iteration: 2, relative residual: 0.5174252707073064
+Iteration: 3, relative residual: 0.32782343941513614
+Iteration: 4, relative residual: 0.19129517724113287
+Iteration: 5, relative residual: 0.10655130574833771
+Iteration: 6, relative residual: 0.057754507066677035
+Iteration: 7, relative residual: 0.030738613933127185
+Iteration: 8, relative residual: 0.016119548825240845
+Iteration: 9, relative residual: 0.00834253886270255
+Iteration: 10, relative residual: 0.004978365535487182
+Iteration: 11, relative residual: 0.0038274336587158196
+Iteration: 12, relative residual: 0.00209859373172295
+Iteration: 13, relative residual: 0.0015922816990158628
+Iteration: 14, relative residual: 0.0008427843063537278
+Iteration: 15, relative residual: 0.0004243084977540988
+Iteration: 16, relative residual: 0.00025204518940943535
+Iteration: 17, relative residual: 0.00019871214151972598
+Iteration: 18, relative residual: 0.00015855800494802587
+Iteration: 19, relative residual: 9.117375052471139e-05
+Iteration: 20, relative residual: 6.148200826364504e-05
+Iteration: 21, relative residual: 4.188386815150865e-05
+Iteration: 22, relative residual: 2.628552211874728e-05
+Iteration: 23, relative residual: 2.1751781600621212e-05
+Iteration: 24, relative residual: 1.2642929740532937e-05
+GMRES solve
+Converged after 25 iterations to a residual of 8.562452046178175e-06
+Time weight vector: 2.9223315429687506
+Time sort         : 0.2900947265625002
+Time data transfer: 0.0
+Time P2M          : 8.122182861328128
+Time M2M          : 0.20801513671875008
+Time M2P          : 121.54374265670776
+Time P2P          : 345.791796207428
+	Time analy: 9.771793842315674
+Solve for phi
+Iteration: 1, relative residual: 0.08274342069506893
+Iteration: 2, relative residual: 0.06979633261397383
+Iteration: 3, relative residual: 0.05691610346934561
+Iteration: 4, relative residual: 0.04945817013927149
+Iteration: 5, relative residual: 0.04026786361846767
+Iteration: 6, relative residual: 0.03300663212638648
+Iteration: 7, relative residual: 0.027130289544718657
+Iteration: 8, relative residual: 0.021146621678983357
+Iteration: 9, relative residual: 0.012705584049706255
+Iteration: 10, relative residual: 0.006591007250284223
+Iteration: 11, relative residual: 0.004355104414537391
+Iteration: 12, relative residual: 0.002797792665320864
+Iteration: 13, relative residual: 0.0023319868805697372
+Iteration: 14, relative residual: 0.0015562356035463021
+Iteration: 15, relative residual: 0.0012083446137674957
+Iteration: 16, relative residual: 0.0007350402805095419
+Iteration: 17, relative residual: 0.0004548229807330926
+Iteration: 18, relative residual: 0.0003376076771118202
+Iteration: 19, relative residual: 0.00021852392646453834
+Iteration: 20, relative residual: 0.00017220426827274172
+Iteration: 21, relative residual: 0.00010964942976483114
+Iteration: 22, relative residual: 7.03764993704938e-05
+Iteration: 23, relative residual: 4.884938911804288e-05
+Iteration: 24, relative residual: 2.983007651174891e-05
+Iteration: 25, relative residual: 2.1865257717996756e-05
+Iteration: 26, relative residual: 1.7146840527774834e-05
+Iteration: 27, relative residual: 1.1160963638175482e-05
+GMRES solve
+Converged after 28 iterations to a residual of 7.991759488118875e-06
+Time weight vector: 5.26510302734375
+Time sort         : 0.4995749511718752
+Time data transfer: 0.0
+Time P2M          : 14.144916015624998
+Time M2M          : 0.3596542968750001
+Time M2P          : 215.97444915771484
+Time P2P          : 621.1706230640411
+	Time analy: 17.292340993881226
+
+Picard iteration 2
+Solve for sigma
+Iteration: 1, relative residual: 0.09537077452485505
+Iteration: 2, relative residual: 0.05265561372840049
+Iteration: 3, relative residual: 0.025211881706541157
+Iteration: 4, relative residual: 0.011176874588253794
+Iteration: 5, relative residual: 0.004729405945798041
+Iteration: 6, relative residual: 0.0019384427369826427
+Iteration: 7, relative residual: 0.0007770676340560349
+Iteration: 8, relative residual: 0.00030710546804375947
+Iteration: 9, relative residual: 0.00013082512113698594
+Iteration: 10, relative residual: 0.0001032759722937977
+Iteration: 11, relative residual: 4.8663379947495976e-05
+Iteration: 12, relative residual: 3.6257774840458466e-05
+Iteration: 13, relative residual: 2.2034848256878183e-05
+Iteration: 14, relative residual: 1.4301612160166132e-05
+GMRES solve
+Converged after 15 iterations to a residual of 9.485926073284321e-06
+Time weight vector: 5.477966308593749
+Time sort         : 0.5195830078125001
+Time data transfer: 0.0
+Time P2M          : 14.704756835937497
+Time M2M          : 0.37530102539062515
+Time M2P          : 224.99793529510498
+Time P2P          : 639.7789943218231
+	Time analy: 17.998241424560547
+Solve for phi
+Iteration: 1, relative residual: 0.00032415659993631805
+Iteration: 2, relative residual: 0.00022382820379605458
+Iteration: 3, relative residual: 0.00017218704367570023
+Iteration: 4, relative residual: 0.0001243275715059034
+Iteration: 5, relative residual: 8.420772876967886e-05
+Iteration: 6, relative residual: 5.829260164911873e-05
+Iteration: 7, relative residual: 4.653296238531455e-05
+Iteration: 8, relative residual: 3.4112263416011315e-05
+Iteration: 9, relative residual: 2.309860678017067e-05
+Iteration: 10, relative residual: 1.4678966112799516e-05
+Iteration: 11, relative residual: 1.0130507729214135e-05
+GMRES solve
+Converged after 12 iterations to a residual of 7.161796408623809e-06
+Time weight vector: 6.5396118164062464
+Time sort         : 0.6178632812500002
+Time data transfer: 0.0
+Time P2M          : 17.536864013671877
+Time M2M          : 0.4473212890625002
+Time M2P          : 269.5580801963806
+Time P2P          : 770.0206336975098
+	Time analy: 21.555876970291138
+
+Picard iteration 3
+Solve for sigma
+Iteration: 1, relative residual: 0.00023208227287857322
+Iteration: 2, relative residual: 0.00016655356594209972
+Iteration: 3, relative residual: 0.00010757129675294371
+Iteration: 4, relative residual: 6.508581896321414e-05
+Iteration: 5, relative residual: 3.752841273268399e-05
+Iteration: 6, relative residual: 2.1187964091318523e-05
+Iteration: 7, relative residual: 1.2332823144939243e-05
+GMRES solve
+Converged after 8 iterations to a residual of 7.6012323542395185e-06
+Time weight vector: 6.664434082031247
+Time sort         : 0.6293476562500003
+Time data transfer: 0.0
+Time P2M          : 17.87377050781251
+Time M2M          : 0.4565310058593751
+Time M2P          : 275.0417113304138
+Time P2P          : 781.5506157875061
+	Time analy: 21.990872859954834
+Solve for phi
+Reached Picard tolerance of 0.0001
+Error: 0.0
+Solve time        : 1098.1873033046722s
+
+Calculate Solvation Energy (E_solv)
+Calculating solvation energy for region 2, stored in E_solv[0]
+0.0 of 9814 analytical integrals for phi_reac calculation in region 2
+Time E_solv: 0.24072813987731934s
+Region 2: E_solv = -2.4537677703758187 kcal/mol = -10.266564351252425 kJ/mol
+
+Calculate Surface Energy (E_surf)
+Time E_surf: 0.015036344528198242s
+
+Calculate Coulomb Energy (E_coul)
+Calculate Coulomb energy for region 2
+Region 2: E_coul = -17.513847166082126 kcal/mol = -73.27793654288762 kJ/mol
+Time E_coul: 0.0002124309539794922s
+
+------------------------------
+Totals:
+E_solv = -2.4537677703758187 kcal/mol
+E_surf = 0 kcal/mol
+E_coul = -17.513847166082126 kcal/mol
+
+Time = 1100.2142870426178 s

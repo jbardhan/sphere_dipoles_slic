@@ -1,0 +1,112 @@
+Run started on:
+	Date: 2021/8/1
+	Time: 22:5:0
+	PyGBe version: 0.3.1+43.g2443fe6
+Config file: sphere_20/sphere_20_1.config
+Parameter file: /home/bard415/repos/sphere_dipoles_slic/sphere_20/sphere_20.param
+Geometry folder: /home/bard415/repos/sphere_dipoles_slic/sphere_20/geometry
+Running in: /home/bard415/repos/sphere_dipoles_slic/sphere_20
+Could not find `nvcc` on your PATH.  Is cuda installed?  PyGBe will continue to run but will run significantly slower.  For optimal performance, add `nvcc` to your PATH
+
+Reading surface 0 from file ./surf1Xh2PD
+Time load mesh: 0.09358501434326172
+Removed areas=0: 0
+
+Reading surface 1 from file ./surf0UZ6kG
+Time load mesh: 0.10833954811096191
+Removed areas=0: 0
+
+Total elements : 21874
+Total equations: 43748
+----------------------------
+
+2 surfaces:
+
+Surface 0:
+	9814 elements
+	Surface type         : dielectric_interface
+	Cells                : 65
+	Twigs                : 56
+	Levels               : 3
+	C0 size              : 19.991219246127336
+	C0 box center        : -3.706927661597425e-16, -4.2897900957913044e-05, -7.132667617763617e-06
+	Twig cell size       : 4.997804811531834
+	Rbox/theta           : 9.995609623063668
+	Analytic distance    : 2.023544109107244
+	Elem. per Ang^2      : 1.9536676538223772
+	Max, min, avg elem.  : 0.581901937256399, 0.44395697199165596, 0.5118577860689286
+	Total area           : 5023.372312480466
+Surface 1:
+	12060 elements
+	Surface type         : stern_layer
+	Cells                : 65
+	Twigs                : 56
+	Levels               : 3
+	C0 size              : 21.99226655107296
+	C0 box center        : 6.033132350069176e-16, -3.1343283582206215e-05, -1.9347705909384972e-07
+	Twig cell size       : 5.49806663776824
+	Rbox/theta           : 10.99613327553648
+	Analytic distance    : 2.008078192265229
+	Elem. per Ang^2      : 1.9838822667254967
+	Max, min, avg elem.  : 0.5691545225859143, 0.43408611564123994, 0.5040621698033287
+	Total area           : 6078.989767828145
+------------------------------
+
+3 regions:
+
+Region 0:
+	Laplace or Yukawa: 2
+	kappa            : 0.125
+	dielectric const : 80.0
+	Number of charges: 0
+	Parent surface   : []
+	Child surfaces   : [1]
+Region 1:
+	Laplace or Yukawa: 1
+	kappa            : 1e-12
+	dielectric const : 80.0
+	Number of charges: 0
+	Parent surface   : [1]
+	Child surfaces   : [0]
+Region 2:
+	Laplace or Yukawa: 1
+	kappa            : 1e-12
+	dielectric const : 1.0
+	Number of charges: 2
+	Parent surface   : [0]
+	Child surfaces   : []
+------------------------------
+
+Parameters:
+	Data type               : <class 'numpy.float64'>
+	Use GPU                 : 0
+	P                       : 6
+	threshold               : 0.50
+	theta                   : 0.50
+	NCRIT                   : 500
+	CUDA block size         : 128
+	Gauss points per element: 7
+	Gauss points near singlr: 19
+	1D Gauss points per side: 13
+	GMRES tolerance         : 1e-05
+	GMRES max iterations    : 1000
+	GMRES restart iteration : 500
+----------------------------
+
+Generate interaction list
+Transfer data to GPU
+Generate RHS
+List time          : 0.03386855125427246s
+Data transfer time : 7.152557373046875e-07s
+RHS generation time: 0.0004730224609375s
+------------------------------
+Total setup time   : 1.7054457664489746s
+Solve
+Asymmetric parameters:
+alpha: 0.000000, beta: 0.000000, gamma: 0.000000
+Picard: 
+	max iter: 20
+tolerance: 0.000100
+
+Picard iteration 0
+Solve for phi
